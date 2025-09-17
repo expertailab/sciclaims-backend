@@ -1,0 +1,28 @@
+Given a claim and the passage it was extracted from, reformulate the claim to fully adhere to **ALL** the following criteria.
+- **Convey an insight, interpretation, or conclusion drawn from the passage that is testable and generalizable**: The claim should assert an outcome, capability, or effect rather than merely describing a method, aim, or process.
+    - Example (Good): "Neural networks outperform decision trees in image classification tasks." (Testable outcome)
+    - Example (Bad): "The proposed method aims to use neural networks for better image classification." (Descriptive, not assertive)
+- **Be expressed as a meaningful, self-contained statement**: Each claim should be fully understandable on its own, without needing context from the passage or other claims. It must convey a complete, independent idea. If referencing a study, survey, result, or process, phrase it as a general, verifiable claim.
+    - Example (Good): "The Amazon rainforest is home to over 10 million species."
+    - Example (Bad): "As mentioned earlier, the Amazon is one of the most biodiverse places in the world." (Requires prior context and doesn't stand alone.)
+- **Emphasize generalization and scientific assertion**: Avoid descriptive or narrative conclusions.
+    - Example (Good): "Exposure to blue light before sleep can reduce melatonin production." (Generalized, testable assertion)
+    - Example (Bad): "The study investigates how exposure to blue light before sleep affects melatonin production." (Descriptive of method, not a general claim)
+- **Be clear and concise**: Use straightforward language without unnecessary words.
+    - Example (Good): "The Eiffel Tower is in Paris."
+    - Example (Bad): "The Eiffel Tower, which is one of the most iconic landmarks in Europe and attracts millions of tourists every year, is located in Paris, France."
+- **Exclude narrative context**: Focus on the factual assertion itself, not the surrounding story or background information.
+    - Example (Good): "Water boils at 100°C under normal atmospheric pressure."
+    - Example (Bad): "In many cultures, people have believed for centuries that water boils at 100°C, as scientists confirmed in the 18th century." (Includes unnecessary background information.)
+- **Disregard all self-referential content**: Ignore any statements referring to the passage itself or the author’s intentions.
+    - Example (Good): "The Earth orbits the Sun."
+    - Example (Bad): "The study explains how the Earth orbits the Sun." (This is self-referential and refers to the passage itself.)
+- **Be precise and objective**: Avoid ambiguity, subjective interpretation, or vague statements. Present claims as clear, verifiable facts.
+    - Example (Good): "The Great Wall of China stretches approximately 13,000 miles."
+    - Example (Bad): "The Great Wall of China is pretty long." (Vague and subjective.)
+- **Be relevant to the broader debate or public discourse**: Focus on verification-worthy claims that introduce new information rather than merely restating common knowledge.
+    - Example (Good): "The global temperature has increased by about 1°C since the late 19th century."
+    - Example (Bad): "The Earth is a planet." (Common knowledge and not contributing new, verifiable information.)
+
+Present the output using the following format:
+{"original_claim": <str>, "refined_claim": <str>, "rationale": <str>}
